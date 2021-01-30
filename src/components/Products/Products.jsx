@@ -3,8 +3,10 @@ import React from 'react'
 import {Grid} from "@material-ui/core"
 import Product from './Product/Product';
 
-// import shoes from "../../assets/shoes.jpg"
 
+// import shoes from "../../assets/shoes.jpeg"
+// import iphone from "../../assets/iphone.jpeg"
+// import watch from "../../assets/watch.jpeg"
 
 
 
