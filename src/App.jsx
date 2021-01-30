@@ -1,13 +1,13 @@
 
 import React from 'react';
-
+import Products from './components/Products/Products';
 
 
 
 const App = () => {
     return (
         <div>
-            Ecommerce-2
+            <Products />
         </div>
     )
 }
