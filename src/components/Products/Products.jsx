@@ -8,19 +8,16 @@ import Product from './Product/Product';
 // import iphone from "../../assets/iphone.jpeg"
 // import watch from "../../assets/watch.jpeg"
 
-
-
-const products=[
-    {id:1,name:"Shoes", price:"$180", desc:"Running shoes",image:"https://images.pexels.com/photos/292999/pexels-photo-292999.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"},
-    {id:2,name:"iPhone",price:"$1150", desc:"Smart phone",image:"https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"},
-    {id:3,name:"Watch",price:"$1850", desc:"Casual pants",image:"https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"},
-]
+import useStyles from "./styles";
 
 
  
-const Products = () => {
+const Products = ({products}) => {
+
+    const classes=useStyles();
     return (
-        <main>
+        <main className={classes.content}>
+            <div className={classes.toolbar} />
             <Grid container justify="center" spacing={4}>
                 {products.map(product=>(
                     <Grid item key={product.id} xs={12} sm={6} md={4} lg={3}>
